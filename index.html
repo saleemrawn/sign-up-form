@@ -8,12 +8,68 @@
   </head>
   <body>
     <main>
-      <h1>Sign-up Form</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, tenetur temporibus unde fugit consectetur nam,
-        aperiam dolorum atque ullam distinctio, ducimus nostrum deleniti magnam. Eveniet totam in non repudiandae
-        magnam.
-      </p>
+      <div class="left-col">
+        <div class="logo-container">
+          <img src="img/odin-lined.png" alt="odin logo" />
+          <h1>Odin</h1>
+        </div>
+
+        <div class="img-attribution">
+          <p>Photo by <a href="#" target="_blank">Halie West</a> on <a href="#" target="_blank">Unsplash</a></p>
+        </div>
+      </div>
+
+      <div class="right-col">
+        <div class="desc-container">
+          <p class="desc">
+            This is not a real online service! You know you need something like this in your life to help you realize
+            your deepest dreams.
+          </p>
+          <p>Sign up <em>now</em> to get started.</p>
+          <p>You <em>know</em> you want to.</p>
+        </div>
+
+        <div class="form-container">
+          <p>Let's do this!</p>
+          <form action="#">
+            <div class="fname-container">
+              <label for="first-name">First name</label>
+              <input type="text" id="first-name" name="first-name" />
+            </div>
+
+            <div class="lname-container">
+              <label for="last-name">Last name</label>
+              <input type="text" id="last-name" name="last-name" />
+            </div>
+
+            <div class="email-container">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" />
+            </div>
+
+            <div class="phone-container">
+              <label for="phone">Phone number</label>
+              <input type="text" id="phone" name="phone" />
+            </div>
+
+            <div class="pw-container">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" />
+            </div>
+
+            <div class="confirm-pw-container">
+              <label for="confirm-password">Confirm password</label>
+              <input type="password" id="confirm-password" name="confirm-password" />
+            </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="action-bttns-container">
+          <button type="submit">Create Account</button>
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+      </div>
     </main>
   </body>
 </html>
