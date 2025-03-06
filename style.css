@@ -4,7 +4,8 @@
   --neutral-colour: #f9fafb;
   --focus-colour: #001eff;
   --border-colour: #e5e7eb;
-  --invalid-colour: #ff0000;
+  --invalid-colour: red;
+  --valid-colour: green;
   --hover-colour: #3f4d33;
 }
 
@@ -53,8 +54,16 @@ input:focus-visible {
   border: none;
 }
 
-input:invalid {
-  border: 0.063rem solid var(--invalid-colour);
+input:not(:focus):user-invalid {
+  border-color: var(--invalid-colour);
+}
+
+input:not(:focus):user-valid {
+  border-color: var(--valid-colour);
+}
+
+input:placeholder-shown {
+  color: rgba(0, 0, 0, 0.6);
 }
 
 button {
