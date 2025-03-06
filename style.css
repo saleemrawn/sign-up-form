@@ -1,0 +1,184 @@
+:root {
+  --primary-colour: #586b47;
+  --secondary-colour: #2c2d2d;
+  --neutral-colour: #f9fafb;
+  --focus-colour: #001eff;
+  --border-colour: #e5e7eb;
+  --invalid-colour: #ff0000;
+  --hover-colour: #3f4d33;
+}
+
+@font-face {
+  font-family: "Norse-Bold";
+  src: url(font/Norse-Bold.otf) format("opentype");
+}
+
+body {
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  margin: 0;
+}
+
+main {
+  display: flex;
+}
+
+p {
+  color: var(--secondary-colour);
+}
+
+a {
+  font-weight: bold;
+  color: var(--primary-colour);
+}
+
+a:hover {
+  color: var(--hover-colour);
+}
+
+input {
+  border: 0.063rem solid var(--border-colour);
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+}
+
+input:focus {
+  border: 0.125rem solid var(--focus-colour);
+  box-shadow: 0.25rem 0.25rem 1rem 0 rgba(0, 0, 0, 0.3);
+}
+
+input:focus-visible {
+  outline: 0.125rem solid var(--focus-colour);
+  border: none;
+}
+
+input:invalid {
+  border: 0.063rem solid var(--invalid-colour);
+}
+
+button {
+  font-size: 1rem;
+  background-color: var(--primary-colour);
+  color: #ffffff;
+  border: none;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  padding: 0.75rem 2.5rem;
+  box-shadow: 0.25rem 0.25rem 1rem 0 rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--hover-colour);
+}
+
+button[type="submit"] {
+  margin-bottom: 0.5rem;
+}
+
+label {
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.75rem;
+  letter-spacing: 0.063rem;
+  margin-bottom: 0.25rem;
+}
+
+form {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr min-content;
+  gap: 1.5rem 4rem;
+}
+
+.left-col,
+.right-col {
+  height: 100vh;
+}
+
+.left-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40vw;
+  background: url(img/halie-west.jpg) 0 0 no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 20%;
+}
+
+.logo-container img {
+  width: 7.5rem;
+  height: auto;
+}
+
+.logo-container h1 {
+  font-family: "Norse-Bold";
+  font-size: 6rem;
+  font-weight: normal;
+  color: #ffffff;
+  margin: 0;
+}
+
+.img-attribution p,
+.img-attribution a {
+  color: #ffffff;
+  font-weight: initial;
+  font-size: 0.875rem;
+}
+
+.right-col {
+  width: 60vw;
+  background-color: var(--neutral-colour);
+}
+
+.desc-container {
+  padding: 6rem 2.5rem 1.5rem 2.5rem;
+}
+
+.desc {
+  margin: 0;
+}
+
+.desc:last-child {
+  margin-top: 2.5rem;
+}
+
+.desc,
+.form-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.form-title {
+  margin-top: 0;
+}
+
+.form-container {
+  background-color: #ffffff;
+  padding: 1.5rem 2.5rem;
+  box-shadow: 0 0.5rem 0.5rem -0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.action-bttns-container {
+  padding: 1.5rem 2.5rem;
+}
+
+.action-bttns-container a {
+  text-decoration: none;
+}
+
+.action-bttns-container a:hover {
+  text-decoration: underline;
+}
